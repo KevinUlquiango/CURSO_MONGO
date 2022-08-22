@@ -1,0 +1,8 @@
+use('proyecto1')
+// es como usar el if y el else
+db.pruebaImport.find({$expr:{$gte:["$no_clientes","$no_cdtos"]}})
+
+
+use('proyecto1')
+// es como usar el if y el else
+db.pruebaImport.findOne({$expr:{$gte:["$fec_ini_cdto","2020-12-31"]}})
