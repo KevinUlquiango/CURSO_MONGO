@@ -1,0 +1,13 @@
+use("proyecto1");
+db.pruebaImport.find({
+  $nor: [{ fec_ini_cdto: { $lte: "20-03-01"}}]
+});
+
+use("proyecto1");
+db.pruebaImport.find({$nor:[{"B_adeudo": {$eq:"Con adeudo"}},{ "":{$eq:3}}]})
+
+
+// buscar por id
+use("proyecto1");
+db.pruebaImport.findOne({"_id":ObjectId("6302725ecedd7f3108151f9a")
+  })

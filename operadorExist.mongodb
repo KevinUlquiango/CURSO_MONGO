@@ -1,0 +1,8 @@
+use('mi_primer_base')
+
+// exists solo recibe true y false
+db.movie.find({anio:{$exists:false}})
+
+// busco que exista y que tenga el año 2000
+use('mi_primer_base')
+db.movie.find({anio:{$exists:true,$in:[2000]}})
