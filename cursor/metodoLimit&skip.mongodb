@@ -1,0 +1,7 @@
+use('mi_primer_base')
+/*Limite de documentos => limit */
+db.movie.find().sort({anio:1}).limit(5)
+
+
+/*Numero de documentos que quiero saltame =>skip */
+db.movie.find().sort({anio:-1}).skip(5).limit(2)

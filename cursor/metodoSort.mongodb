@@ -1,0 +1,10 @@
+use('mi_primer_base')
+/*
+de menor a mayor =>1
+de mayor a menor =>-1
+
+*/
+db.movie.find().sort({anio:-1})
+
+/*se da prioriodad al campo izquierdo */
+db.movie.find().sort({pelicula:1,anio:-1})

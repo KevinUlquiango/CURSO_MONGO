@@ -1,0 +1,4 @@
+// proyección es equivalente a los campos que se muestran en el select
+// {}si quiero que traiga todo
+use('mi_primer_base')
+db.movie.find({pelicula:'lorax5'},{pelicula:1,_id:0})
