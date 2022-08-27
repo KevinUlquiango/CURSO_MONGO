@@ -1,0 +1,7 @@
+use('mi_primer_base')
+/*
+    nombre de la coleccion mas un .$ traer 
+    solo el campo que buscamos, en este caso Goku
+*/
+
+db.movie.find({personajes:'Goku'},{'personajes.$':1,_id:0})

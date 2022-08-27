@@ -1,0 +1,18 @@
+use('mi_primer_base')
+/*
+    slice muestra solo el numero de resultados del campo 
+    que busco, en este caso personajes que tiene 4 datos,
+    pero como esta en slice 2 solo me trae 2
+ */
+// db.movie.find({personajes:'Goku'},{personajes:{$slice:2}})
+ 
+/*
+$slice:[1,2]
+    en el primer campo digo la posicion desde donde traer
+    en el segundo le digo cuantos elementos 
+    en este caso le digo en la posicion uno, y trae 2 elementos
+    de los 3 que existen
+*/
+db.movie.find({personajes:'Goku'},{
+    personajes:{$slice:[1,2]}
+    })
