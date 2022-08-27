@@ -1,0 +1,4 @@
+use ('mi_primer_base')
+// es similar al operador and
+
+db.movie.find({personajes:{$all:['Goku','Trons']}})

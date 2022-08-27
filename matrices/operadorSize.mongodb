@@ -1,0 +1,21 @@
+use('mi_primer_base')
+/* db.movie.insertOne({pelicula:'Dragon ball z',personajes:['Goku','Trons','Bulma']})
+db.movie.insertOne({
+    pelicula:'Thor',
+    personajes:[
+        {
+            nombre:'Erick',
+            edad:25
+        },
+        {
+            nombre:'Mishell',
+            edad:22
+        },
+        {
+            nombre:'Karla',
+            edad:25
+        }
+    ]})
+*/
+// size solo funciona para matrices
+db.movie.find({personajes:{$size:3}})

@@ -1,0 +1,14 @@
+use ('mi_primer_base')
+
+// es lo mismo que decir en sqlserver edad>=25 and edad<= 64
+// db.movie.find({
+//     personajes:{
+//         $elemMatch:{edad:{$gte:25,$lte:64}}
+//         }
+//     })
+// db.movie.insertOne({pelicula:"Un nuevo Universo",codigo:[11,2,3,4,58]})
+db.movie.find({
+codigo:{
+    $elemMatch:{$gte:25,$lte:58}
+    }
+})

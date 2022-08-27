@@ -1,0 +1,28 @@
+use ('mi_primer_base')
+db.datosPersonales.drop()
+db.datosPersonales.insertMany(
+    [
+        {
+        nombre:'Juan',
+        direccion:{
+            calle:123,
+            ciudad:'Quito'
+            }
+        },
+        {
+        nombre:'Luis',
+        direccion:{
+            calle:458,
+            ciudad:'Cuenca'
+            }
+        },
+        {
+        nombre:'Erick',
+        direccion:{
+            ciudad:'Quito',
+            calle:112,
+            }
+        }
+    ]
+)
+db.datosPersonales.find({'direccion.ciudad':'Quito'})
