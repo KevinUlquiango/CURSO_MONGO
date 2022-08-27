@@ -1,0 +1,25 @@
+use('mi_primer_base')
+
+/* 
+    esto es mejor probarlo en consola
+    next()permite ver el siguiente elemento 
+    hasNext() permite ver si hay mas elementos, retorna true o false
+*/
+const myCursor = db.movie.find()
+myCursor.next()
+myCursor.next()
+myCursor.next()
+myCursor.next()
+myCursor.next()
+myCursor.next()
+myCursor.next()
+myCursor.next()
+myCursor.next()
+
+myCursor.next()
+myCursor.next()
+myCursor.next()
+myCursor.next()
+myCursor.next()
+myCursor.hasNext()
+
