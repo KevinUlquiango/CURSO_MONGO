@@ -1,0 +1,8 @@
+use('mi_primer_base');
+
+db.movie.updateOne(
+    
+    {_id:ObjectId("6302d395322d213f1abb1b36")},
+    {$set:{anio:2023}}
+    );
+db.movie.find({_id:ObjectId("6302d395322d213f1abb1b36")})

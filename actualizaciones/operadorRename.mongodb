@@ -1,0 +1,12 @@
+use('mi_primer_base');
+/*
+rename es para cambiar el nombre de la llave
+en este caso la llave pelicula pasa a ser 
+peliculaRenome
+ */
+db.movie.updateOne(
+    {pelicula:{$eq:'lorax2'}},
+        // {pelicula:{$eq:'Ironman'},anio:null},
+    {$rename:{'pelicula':'peliculaRenome'}}
+    )
+db.movie.find()

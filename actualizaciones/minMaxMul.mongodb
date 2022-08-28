@@ -1,0 +1,11 @@
+use('mi_primer_base')
+/*
+min => actualiza siempre y cuando el nuevo valor sea menor al valor ya existente
+db.movie.updateOne({pelicula:'Ironman'},{$min:{anio:2028}})
+max => actualiza siempre y cuando el nuevo valor sea mayor al valor ya existente
+
+mul => multiplica el valor ingresado por el valor del campo
+db.movie.updateOne({pelicula:'Ironman'},{$mul:{anio:2}})
+ */
+db.movie.updateOne({pelicula:'Ironman'},{$mul:{anio:2}})
+db.movie.find({pelicula:'Ironman'})

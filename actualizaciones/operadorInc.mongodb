@@ -1,0 +1,11 @@
+use('mi_primer_base')
+// db.movie.updateOne(
+//     {pelicula:{$eq:'Ironman'},anio:null},
+//     {$set:{anio:2008}}
+//     )
+/*
+inc aumenta o resta 
+ */
+db.movie.updateOne({pelicula:'Ironman',anio:2018},{$inc:{anio:-15}})
+
+db.movie.find({pelicula:'Ironman'})

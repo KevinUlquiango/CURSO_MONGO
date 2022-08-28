@@ -1,0 +1,6 @@
+use('mi_primer_base')
+db.movie.updateOne({_id:ObjectId("6302d38edee5fdcce81aefa2")},{$unset:{anio:''}})
+/*para eliminar con mas campos
+    db.movie.updateOne({_id:ObjectId("6302d38edee5fdcce81aefa2")},{$unset:{anio:'',nombre:'',pelicula:''}})
+*/
+db.movie.find({_id:ObjectId("6302d38edee5fdcce81aefa2")})

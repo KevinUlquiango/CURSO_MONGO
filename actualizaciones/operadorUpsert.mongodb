@@ -1,0 +1,6 @@
+use('mi_primer_base')
+/*
+upsert=> cuando no encuentra el campo que busca, lo forza a crearlo
+*/
+db.movie.updateOne({pelicula:'Ironman3'},{$set:{anio:2015}},{upsert:true})
+db.movie.find()
