@@ -1,0 +1,8 @@
+use('mi_primer_base')
+
+/*
+pare eliminar cuando necesitamos que cumpla mas conficiones
+    db.movie.deleteOne({_id:ObjectId("62fd9c89c8b261832d0de49f"),anio:2010})
+*/
+// db.movie.deleteOne({_id:ObjectId("62fd9c89c8b261832d0de49f")})
+db.movie.deleteMany({pelicula:'Ironman'})

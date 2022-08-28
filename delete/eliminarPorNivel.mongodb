@@ -1,0 +1,12 @@
+use('mi_primer_base')
+
+/*
+    Para eliminar todos los documentos de una coleccion 
+    db.movie.deleteMany({})
+
+    Para eliminar coleccion
+    db.datosPersonales.drop()
+    
+    eliminar base de datos completa
+    db.dropDatabase()
+ */
