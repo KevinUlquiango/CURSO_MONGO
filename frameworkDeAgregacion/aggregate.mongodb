@@ -1,0 +1,18 @@
+use('proyecto1')
+// db.pruebaImport.find().limit(5)
+db.pruebaImport.aggregate([
+    {$match: {B_adeudo:"Con adeudo"}},
+    {
+    $group: {
+      _id: {id_sucursal:'$id_sucursal'},
+      cliente_deudo: {
+       $sum:'$no_clientes'
+      }
+    }},
+    {$sort:{cliente_deudo:-1}},
+    {
+    $project: {
+     cliente_deudo:1,
+     campo_nuevo:{$concat:['este es un campo',' ','cancatenado']}
+    }}
+])
